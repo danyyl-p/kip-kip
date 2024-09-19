@@ -14,45 +14,29 @@ int main()
     while (true)
     {
         i++;
-        cout << "operator true " << endl << "i = " << i << endl;
+        cout << "Iteration: " << i << endl;
 
-
-        if (int2 > int1 && int3 < int4)
+        while (int2 > int1 && int3 < int4)
         {
             int1++;
             int3++;
-            cout << "operator true " << endl << "int1 = " << int1 << endl << "int3 = " << int3 << endl;
-        }
-        else
-        {
-            cout << "operator false " << endl << "int1 = " << int1 << endl << "int3 = " << int3 << endl;
+            cout << "int1 and int3" << endl;
+            cout << "int1 = " << int1 << " int3 = " << int3 << endl;
         }
 
         if (int1 == int3)
         {
-            cout << "operator == true" << endl;
-        }
-        else
-        {
-            cout << "operator == false" << endl;
+            cout << "int1 == int3 is true" << endl;
         }
 
         if (int1 != int2)
         {
-            cout << "operator != true" << endl;
-        }
-        else
-        {
-            cout << "operator == false" << endl;
+            cout << "int1 != int2 is true" << endl;
         }
 
         if (int1 == int3 && int2 == int4)
         {
-            cout << "operator == && == true" << endl;
-        }
-        else
-        {
-            cout << "operator == && == false" << endl;
+            cout << "int1 == int3 && int2 == int4 is true" << endl;
         }
 
         if ((int2 > int1 && int3 < int4) &&
